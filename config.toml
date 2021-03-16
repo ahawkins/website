@@ -1,0 +1,77 @@
+baseURL = "https://wiki.hawkins.io"
+languageCode = "en-us"
+title = "Hawkins.io"
+theme = "ananke"
+enableEmoji = true
+# enableGitInfo = true
+
+sectionPagesMenu = "main"
+
+paginate = 50
+
+[params]
+  custom_css = ["css/custom.css"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[markup]
+  [markup.highlight]
+    tabWidth = 2
+
+[menu]
+  [[menu.main]]
+    identifier = "theory"
+    name = "Theory"
+    title = "Ideas & Philosophy"
+    url = "/theory/"
+    weight = 1
+  [[menu.main]]
+    identifier = "best-practice"
+    name = "Best Practices"
+    title = "Advice for workflows"
+    url = "/best-practice/"
+    weight = 2
+  [[menu.main]]
+    identifier = "handbook"
+    name = "Handbooks"
+    title = "Handbooks for specific tools and technologies"
+    url = "/handbook/"
+    weight = 3
+  [[menu.main]]
+    identifier = "book"
+    name = "Books"
+    title = "Relevant and recommended reading"
+    url = "/book/"
+    weight = 4
+  [[menu.main]]
+    identifier = "field-notes"
+    name = "Field Notes"
+    title = "Professional scribblings"
+    url = "/field-notes/"
+    weight = 5
+  [[menu.main]]
+    identifier = "article"
+    name = "Articles"
+    title = "Blog"
+    url = "/article/"
+    weight = 6

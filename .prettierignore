@@ -1,0 +1,7 @@
+yarn.lock
+themes/
+*.png
+*.jpg
+*.jpeg
+*.toml
+.tool-versions

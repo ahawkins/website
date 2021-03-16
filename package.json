@@ -1,0 +1,22 @@
+{
+	"name": "wiki",
+	"version": "1.0.0",
+	"description": "My personal wiki",
+	"main": "index.js",
+	"repository": "https://github.com/ahawkins/wiki",
+	"author": "Adam Hawkins <adam@hawkins.io>",
+	"license": "none",
+	"devDependencies": {
+		"husky": "^5.1.3",
+		"lint-staged": "^10.5.4",
+		"lint-staged-editorconfig": "^0.1.0",
+		"prettier": "^2.2.1",
+		"prettier-plugin-sh": "^0.6.0"
+	},
+	"lint-staged": {
+		"*": [
+			"lint-staged-editorconfig",
+			"prettier --write"
+		]
+	}
+}
