@@ -29,6 +29,12 @@
             <div class="location">
 								<h5>Page Updated: {{ .Params.lastMod.Format "Jan 2006" }}</h5>
 						</div>
+						{{- if .Params.toc -}}
+							<div class="table-of-contents">
+								<h3>{{ i18n "whatsInThis" . }}</h3>
+								{{ .TableOfContents }}
+							</div>
+						{{- end -}}
         </div>
         <article class="content">
             {{ .Content }}
