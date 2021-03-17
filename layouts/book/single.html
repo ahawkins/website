@@ -1,0 +1,45 @@
+{{ define "main" }}
+    <div class="album">
+        <div class="title-group">
+            <div class="title">
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div class="subtitle">
+                <h3>{{ .Params.subtitle }}</h3>
+            </div>
+						<div class="authors">
+							{{ with .Params.author }}
+								<p><em>
+								By
+								{{ if reflect.IsSlice . }}
+										{{ delimit . ", " | markdownify }}
+								{{else}}
+										{{ . | markdownify }}
+								{{ end }}
+								</em>
+								</p>
+							{{ end }}
+						</div>
+						<div class="website">
+							<p><a href="{{ .Params.link }}">{{ .Params.link }}</a></p>
+						</div>
+            <div class="date">
+								<h5>Published: {{ .Params.date.Format "Jan 2006" }}</h5>
+						</div>
+            <div class="location">
+								<h5>Page Updated: {{ .Params.lastMod.Format "Jan 2006" }}</h5>
+						</div>
+        </div>
+        <article class="content">
+            {{ .Content }}
+        </article>
+        {{ with .Params.tags }}
+            <div class="tags">
+                <span title="Tags">🏷</span>
+                <div class="horizontal-links links">
+                    {{ range . }}{{ with $.Site.GetPage (printf "/tags/%s" ( . | urlize)) }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </article>
+{{ end }}

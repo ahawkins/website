@@ -1,0 +1,25 @@
+<article class="post-list" style="padding-bottom: 3em;">
+	<a href="{{ .RelPermalink }}">
+		<img src="{{ .Params.cover }}" style="float: left; height: 220px; margin-right: 2em; margin-bottom: 2em;">
+	</a>
+
+	<div class="title-group">
+		<div class="title">
+			<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+		</div>
+		<div class="subtitle">
+			<h3>{{ .Params.subtitle }}</h3>
+		</div>
+		<div class="date"><h5>{{ .Params.date.Format "Jan 2006" }}</h5></div>
+	</div>
+
+	<div class="content">
+		{{ .Summary | safeHTML }}
+	</div>
+
+	{{ if .Truncated }}
+		<div class="read-more">
+			<a href="{{ .RelPermalink }}">Read more ›</a>
+		</div>
+	{{ end }}
+</article>

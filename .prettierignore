@@ -1,5 +1,6 @@
 yarn.lock
 themes/
+layouts/**/*.html
 *.png
 *.jpg
 *.jpeg

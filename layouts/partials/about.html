@@ -1,0 +1,7 @@
+{{ .Site.Params.about | .RenderString }}
+
+<p class="horizontal-links">
+{{ range .Site.Menus.main }}
+	<a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+</p>

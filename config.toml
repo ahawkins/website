@@ -1,16 +1,13 @@
 baseURL = "https://wiki.hawkins.io"
 languageCode = "en-us"
 title = "Hawkins.io"
-theme = "ananke"
+theme = "rocinante"
 enableEmoji = true
-# enableGitInfo = true
+enableGitInfo = true
 
 sectionPagesMenu = "main"
 
 paginate = 50
-
-[params]
-  custom_css = ["css/custom.css"]
 
 [taxonomies]
   category = "categories"
@@ -37,6 +34,7 @@ paginate = 50
 [markup]
   [markup.highlight]
     tabWidth = 2
+    style = "monokailight"
 
 [menu]
   [[menu.main]]
@@ -75,3 +73,14 @@ paginate = 50
     title = "Blog"
     url = "/article/"
     weight = 6
+
+[params]
+  about = """
+Hello. I'm **Adam Hawkins**. I focus on software delivery velocity,
+quality, and reliability.
+
+This to my personal wiki. It indexes my knowledge on
+software engineering and delivery. It's part reference, part field notes, part
+recipies, and part handbook. More importantly it represents the "best
+I know" on certain topics.
+"""
