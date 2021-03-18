@@ -5,7 +5,7 @@ draft = false
 summary = "The 12 factor app sets guidelines for designing software for deployment pipelines. They're a great starting point that can be improved upon."
 tags = ["podcast", "architecture"]
 title = "12 Factor Apps"
-series = [ "12.1 Factor Apps" ]
+series = [ "12 Factor Apps" ]
 toc = true
 +++
 
@@ -84,7 +84,7 @@ flag in this factor for discussion in future episodes.
 ### Backing Services
 
 Backing services, the fourth factor, states applications makes no
-distinction between local and third party services.  Now for example
+distinction between local and third party services. Now for example
 an application’s database and connection to external APIs are treated
 in same way. The idea promotes loose coupling between apps and
 services. The 12 factor app uses an example of switching a local SMTP
@@ -149,7 +149,7 @@ or other infrastructure events do not impact user facing requests.
 
 Dev/Prod parity, the tenth factor, states that apps are designed for
 continuous deployment by minimizing the gap between development and
-production.  The original guideline states: the twelve factor
+production. The original guideline states: the twelve factor
 developer resists the urge to use different backing services between
 development and production. This makes sense when applied to databases
 but has negative implications when applied to distributed systems.
