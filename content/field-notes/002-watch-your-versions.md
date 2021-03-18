@@ -1,7 +1,6 @@
 ---
 title: Watch Your Versions
 date: 2021-03-08T23:08:11-10:00
-draft: true
 ---
 
 Today I tried to add [Husy]({{< ref "handbook/husky" >}}) to this
@@ -19,8 +18,7 @@ checkout version 2 since it's news to me.
 Well [Yarn V2 is a major release][yarn2] with many backwards
 incompatible changes. The biggest being that installing through
 something like `brew` is no longer supported. Yarn V2 is installed
-with `npm install -g yarn`. Then you run `yarn config set version
-berry` (yes that's "berry", a code name for the recent release). At
+with `npm install -g yarn`. Then you run `yarn config set version berry` (yes that's "berry", a code name for the recent release). At
 this point you can run `rm -rf node_modules` and try `yarn install`.
 Next you need to add a bunch of `.yarn` files to `.gitignore` because
 Yarn writes more files to `.yarn/`. Anyway it seems that version 2 is

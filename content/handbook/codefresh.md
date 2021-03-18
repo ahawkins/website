@@ -4,7 +4,6 @@ summary: |
   Codefresh is a hosted or hybird deployment pipeline tool. Best
   practices and gotchas for writing pipelines.
 date: 2021-03-14T22:29:23-10:00
-draft: true
 ---
 
 ## Gotchas
@@ -104,9 +103,9 @@ stepsTemplate: |-
 ```
 
 This template takes the a `KUBE_CONTEXT` argument or uses the
-`KUBE_CONTEXT` variable from the pipeline.  If the `KUBE_CONTEXT` is
+`KUBE_CONTEXT` variable from the pipeline. If the `KUBE_CONTEXT` is
 not set then the step will recieve a literal `${{KUBE_CONTEXT}}` for
-`KUBE_CONTEXT`.  Step authors are advised to always validate env vars. 
+`KUBE_CONTEXT`. Step authors are advised to always validate env vars.
 
 [services]: https://codefresh.io/docs/docs/codefresh-yaml/service-containers/
 [steps]: https://codefresh.io/docs/docs/codefresh-yaml/steps/
