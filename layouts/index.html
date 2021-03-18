@@ -1,0 +1,19 @@
+{{ define "main" }}
+		{{- partial "about.html" . -}}
+
+		<hr />
+
+		{{- .Content -}}
+
+		{{ range site.Sections }}
+		<h1>Recent {{ .Name }}</h1>
+			{{ range first 3 (sort (where .Site.RegularPages "Section" .Section) ".Lastmod" "desc") }}
+			<div class="post-short-list">
+				<h3>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+						({{ .Params.lastMod.Format "Jan 2006" }})
+				</h3>
+			</div>
+			{{ end }}
+		{{ end }}
+{{ end }}

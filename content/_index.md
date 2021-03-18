@@ -5,11 +5,6 @@ description: Personal Wiki of Adam Hawkins
 
 # About
 
-Welcome to my personal wiki. This wiki indexes my knowledge on
-software engineering. It's part reference, part field notes, part
-recipies, and part handbook. More importantly it represents the "best
-I know" on certain topics.
-
 This wiki began after I read [The High Velocity
 Edge]({{< ref "the-high-velocity-edge" >}}).
 The author tells a story of him going to work at Toyota factory. He
@@ -27,11 +22,3 @@ meta work happening. He knew how to learn how to accomplish the task.
 This wiki is like that for me. It documents my understanding
 on achieving software delivery performance sooner, safer, and
 happier.
-
-# Common Topics
-
-- [Theory & philosophy]({{< ref "theory" >}}) on software engineering and software delivery
-- [Best practices]({{< ref "best-practice" >}}) for high level workflows
-- [Handbooks]({{< ref "handbook" >}}) for specific tools or systems
-- [Book]({{< ref "book" >}}) analysis and commentary
-- [Field Notes]({{< ref "field-notes" >}}) from daily work
