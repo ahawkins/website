@@ -4,7 +4,9 @@
             <div class="title">
                 <h1>{{ .Title }}</h1>
             </div>
+						{{ if .Params.date }}
             <div class="date"><h5>{{ .Params.date.Format "Jan 02, 2006" }}</h5></div>
+						{{ end }}
         </div>
 				{{- if .Params.toc -}}
 					<div class="table-of-contents">
