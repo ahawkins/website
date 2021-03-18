@@ -7,8 +7,7 @@ date: 2010-05-03
 publishDate: 2020-05-31
 author:
   - Steven J. Spear
-draft: true
-toc: true
+toc: false
 tags:
   - theory
   - management

@@ -13,7 +13,6 @@ author:
 tags:
   - devops
   - leadership
-draft: true
 toc: true
 summary: |
   In this newly updated and expanded edition of the bestselling The

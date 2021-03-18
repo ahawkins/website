@@ -11,7 +11,6 @@ author:
 tags:
   - devops
   - leadership
-draft: true
 toc: true
 summary: |
   This highly anticipated follow-up to the bestselling title The

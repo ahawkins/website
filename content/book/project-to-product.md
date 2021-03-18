@@ -14,7 +14,6 @@ tags:
   - theory
   - leadership
   - management
-draft: true
 toc: true
 summary: |
   In Project to Product, Value Stream Network pioneer and technology

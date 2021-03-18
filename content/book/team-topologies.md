@@ -9,7 +9,6 @@ publishDate: 2021-03-10
 author:
   - Matthew Skelton
   - Manuel Pais
-draft: true
 toc: true
 tags:
   - devops
@@ -68,7 +67,7 @@ You’ve likely encountered some of these concepts before, so this time
 around it may just be a new language.
 
 I’ll share a personal anecdote from earlier in my career to set the
-stage for this episode. 
+stage for this episode.
 
 Roughly fives years ago I lead the platform team through a complete
 ground up rewrite at a previous company. We were divided into
@@ -76,10 +75,10 @@ technology teams: The web, mobile, and platform team. Given these
 boundaries each of respective team lead set out to create their
 internal architecture. Nothing to see here: just Conway’s law in
 action. It worked well here because we had isomorphic technology and
-team architecture. 
+team architecture.
 
 Then something happened out of the blue shortly after the rewrite
-completed. 
+completed.
 
 The organization went through a total re-org that changed the team
 structure, their responsibilities and how they interacted without
@@ -87,7 +86,7 @@ doing anything to address the underlying technical architecture. This
 created confusing boundaries, ownership responsibilities, and left so
 called "independent feature teams" at the mercy of the small number of
 capable backend engineers capable of working across the various
-internal services. 
+internal services.
 
 These problems could have been avoided with some foresight and
 planning. Plus it’s especially bothersome because the entire
@@ -101,7 +100,7 @@ software architecture fit together to create fast flow or on the other
 hand just inhibit it.
 
 Team Topologies provides a framework that avoids this problem from the
-outset by optimizing for fast flow. Alright, let’s get stuck in.   
+outset by optimizing for fast flow. Alright, let’s get stuck in.
 
 ### Summary
 
@@ -114,7 +113,7 @@ The term "topologies" refers to both the structure and dynamics in an
 organization. Imagine a running river. Structure is like the rocks,
 logs, and plants along the river's path. Dynamics is how water flows
 and moves between the rocks, logs, and plants. The water may take a
-different path as conditions change. That's  the dynamics at play as
+different path as conditions change. That's the dynamics at play as
 water navigates the river's structure. Organizations must consider
 both structure and dynamics when constructing their team topologies.
 
@@ -132,7 +131,7 @@ different parts of the software system, however different parts of the
 software system are owned by exactly one team. This means there should
 be no shared ownership of components, libraries, or code. Teams may
 use shared services at runtime, but every running service,
-application, or subsystem is owned by only one team. 
+application, or subsystem is owned by only one team.
 
 The corollary is that ownership increases cognitive load. Cognitive
 load is all the "stuff" that teams must keep in their head to
@@ -169,20 +168,20 @@ Let's begin with the team types then cover the interaction modes.
 A "stream" is the continuous flow of work aligned with a business
 domain or organizational capability. Continuous flow requires clear
 purpose and responsibility so that multiple teams can coexist, each
-with their own flow of work. 
+with their own flow of work.
 
 A stream-aligned team is a team aligned to a single, valuable stream
 of work; this might be a single product or service, a single set of
-features, a single user journey, or a single user persona. 
+features, a single user journey, or a single user persona.
 
 These teams are nimble. They can quickly change course and integrate
 feedback into their work. More importantly, only they are on the
 critical path to completing their work. This means zero or minimal
-hand-off to other teams. 
+hand-off to other teams.
 
 These are the organization's primary teams, but they cannot exist in
 the vacuum. Stream aligned teams have end-to-end responsibility for
-completing their work, a.k.a you build it you run it. 
+completing their work, a.k.a you build it you run it.
 
 Requiring the team to manage every technical aspect of that process
 would create undue cognitive load, thus impairing the team. This is
