@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <div class="combined-title-pagination">
+      <h1>{{ .Title }}</h1>
+      {{ if ne .Paginator.PageNumber 1 }}
+          <h3 class="current-page">Page {{.Paginator.PageNumber}}</h3>
+      {{ end }}
+    </div>
+    <hr>
+		{{ range .Paginator.Pages }}
+		<div class="post-short-list">
+			<h3>
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</h3>
+		</div>
+		{{ end }}
+
+    {{- partial "pagination.html" . -}}
+{{ end }}
