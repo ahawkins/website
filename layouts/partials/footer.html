@@ -1,0 +1,48 @@
+{{ if not .IsNode }}
+	<style>
+		nav.footer {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav.footer ul {
+			margin: 0;
+		}
+
+		nav.footer li {
+			margin-left: 0;
+			list-style: none;
+		}
+	</style>
+  <div class="content-container">
+    <div class="content">
+      {{- partial "about.html" . -}}
+    </div>
+		<nav class="content footer">
+			<div>
+				<h6>Recommended</h6>
+				<ul>
+					{{ range .Site.Menus.recommended }}
+					<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+			<div>
+				<h6>More</h6>
+				<ul>
+					{{ range .Site.Menus.more }}
+					<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+			<div>
+				<h6>Social</h6>
+				<ul>
+					{{ range .Site.Menus.social }}
+					<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+		</nav>
+  </div>
+{{ end }}

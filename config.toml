@@ -73,6 +73,43 @@ paginate = 50
     title = "Blog"
     url = "/article/"
     weight = 6
+  [[menu.main]]
+    name = "Podcast"
+    title = "Podcast"
+    url = "https://smallbatches.fm"
+    weight = 7
+  [[menu.recommended]]
+    name = "The Three Ways of DevOps"
+    url = "/series/the-three-ways-of-devops"
+    weight = 1
+  [[menu.recommended]]
+    name = "12.1 Factor Apps"
+    url = "/series/12-factor-apps"
+    weight = 2
+  [[menu.recommended]]
+    name = "Preflight Checks"
+    url = "/theory/preflight-checks"
+    weight = 3
+  [[menu.more]]
+    name = "Contact Me"
+    url = "/standing-invitation"
+    weight = 1
+  [[menu.more]]
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.social]]
+    name = "LinkedIn"
+    url = "https://linked.com/in/hi-adam-hawkins"
+    weight = 1
+  [[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/adman65"
+    weight = 2
+  [[menu.social]]
+    name = "Github"
+    url = "https://github.com/ahawkins"
+    weight = 3
 
 [params]
   about = """
