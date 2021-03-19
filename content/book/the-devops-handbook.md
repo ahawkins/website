@@ -21,6 +21,8 @@ summary: |
   Increase profitability, elevate work culture, and exceed
   productivity goals through DevOps practices with this non-fiction
   follow-up to the bestselling The Phoenix Project.
+aliases:
+  - /book-review/devops-handbook/
 ---
 
 ## Background
