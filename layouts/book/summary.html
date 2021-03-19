@@ -1,4 +1,4 @@
-<article class="post-list" style="padding-bottom: 3em;">
+<article class="album post-list" style="padding-bottom: 3em;">
 	<a href="{{ .RelPermalink }}">
 		<img src="{{ .Params.cover }}" style="float: left; height: 220px; margin-right: 2em; margin-bottom: 2em;">
 	</a>
@@ -10,7 +10,11 @@
 		<div class="subtitle">
 			<h3>{{ .Params.subtitle }}</h3>
 		</div>
-		<div class="date"><h5>{{ .Params.date.Format "Jan 2006" }}</h5></div>
+		<div class="date">
+				<h5>Published: {{ .Params.date.Format "Jan 2006" }}</h5></div>
+		<div class="location">
+				<h5>Updated: {{ .Params.lastMod.Format "Jan 2006" }}</h5>
+		</div>
 	</div>
 
 	<div class="content">

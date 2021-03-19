@@ -6,11 +6,8 @@
             </div>
 						{{ if .Params.date }}
             <div class="date">
-							<h5>Published: {{ .Params.date.Format "Jan 2006" }}</h5></div>
+							<h5>{{ .Params.date.Format "2006-05-01" }}</h5></div>
 						{{ end }}
-            <div class="location">
-								<h5>Updated: {{ .Params.lastMod.Format "Jan 2006" }}</h5>
-						</div>
         </div>
 				{{- if .Params.toc -}}
 					<div class="table-of-contents">
