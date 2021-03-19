@@ -1,15 +1,13 @@
 ---
-title: "Bash"
+title: "Bash Bootcamp"
 summary: Bash for total beginners.
 date: 2016-06-07
-draft: true
-toc: true
+toc: false
 tags:
   - bash
   - programming
+  - tutorial
 ---
-
-## Background
 
 I decided to write this because over the past year I slowly became a
 competent Bash programmer. This made more effective than anything else
@@ -32,7 +30,7 @@ become extracted into executable scripts. More complex logic revealed
 the magic of core commands such as `find`, `grep`, and `xargs`.
 Scripts grew and became more well structured. We distributing tools
 written completely with bash & various supporting commands. Our
-deployment infrasturcture required us to create executable commands to
+deployment infrastructure required us to create executable commands to
 start our processes. Slowly things like argument parsing, subcommands,
 and more complex things revealed themselves. I took all this knowledge
 and created new utilities for my own shell. Personal tasks such as
@@ -42,7 +40,7 @@ productive and empowered. The simple magic of standard in, standard
 error, standard out, pipes, redirection, and the command line revealed
 itself to me.
 
-This book summarizes the things I learned along the way. It is not a
+This article summarizes the things I learned along the way. It is not a
 seminal masterwork encompassing everything you need to know. Instead
 it's results oriented. I assume you're a technical person with
 programming experience so you understand things like control
@@ -117,17 +115,18 @@ echo "Hello ${name}"
 
 There are few things going on here. First, the `name` variable is
 assigned using `=`. Next we see the awkward looking bash `if` control
-structure. `if` evaluates to true if the given command exits 0. The `[[ ]]` is a built command for evaluating different conditions. In this case
-the `-z ARG` tests the given value is zero length (blank). Bash requires
-`then` keyword followed by the code to execute. The `fi` ends the `if`
-control structure. Inside the if block the usage instructions are
-printed to stderr via output redirection (`1>&2`). Next `exit` sets the
-exit status and terminates the process. Naturally we exit non zero
-because the command failed. This program is not big by any means but it
-mirrors structure for larger programs: declare named variables, check
-arguments/options, then perform the task. Patterns appear in all
-programming programs, this enables similar problems to be solved in the
-same way.
+structure. `if` evaluates to true if the given command exits 0. The
+`[[ ]]` is a built command for evaluating different conditions. In
+this case the `-z ARG` tests the given value is zero length (blank).
+Bash requires `then` keyword followed by the code to execute. The `fi`
+ends the `if` control structure. Inside the if block the usage
+instructions are printed to stderr via output redirection (`1>&2`).
+Next `exit` sets the exit status and terminates the process. Naturally
+we exit non zero because the command failed. This program is not big
+by any means but it mirrors structure for larger programs: declare
+named variables, check arguments/options, then perform the task.
+Patterns appear in all programming programs, this enables similar
+problems to be solved in the same way.
 
 ## Elements of Style and Structure
 
