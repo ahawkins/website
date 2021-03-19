@@ -107,11 +107,10 @@ paginate = 50
 
 [params]
   about = """
-Hello. I'm **Adam Hawkins**. I focus on software delivery velocity,
-quality, and reliability.
+Hello. I'm **Adam Hawkins**. I help teams build and deploy software that
+delights users and grows businesses.
 
-This to my personal wiki. It indexes my knowledge on
-software engineering and delivery. It's part reference, part field notes, part
-recipies, and part handbook. More importantly it represents the "best
-I know" on certain topics.
+This to my personal wiki. It indexes my knowledge on software engineering and
+delivery. It's part reference, part field notes, part recipies, and part
+handbook. More importantly it represents the "best I know" on certain topics.
 """
