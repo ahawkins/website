@@ -92,6 +92,10 @@ paginate = 50
     name = "About"
     url = "/about"
     weight = 2
+  [[menu.more]]
+    name = "Services"
+    url = "https://adam.hawkins.io/#services"
+    weight = 3
   [[menu.social]]
     name = "LinkedIn"
     url = "https://linked.com/in/hi-adam-hawkins"
