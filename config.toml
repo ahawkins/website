@@ -1,4 +1,4 @@
-baseURL = "https://wiki.hawkins.io"
+baseURL = "https://www.hawkins.io"
 languageCode = "en-us"
 title = "Hawkins.io"
 theme = "rocinante"
