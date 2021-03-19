@@ -1,0 +1,31 @@
+{{ define "main" }}
+    <div class="album">
+        <div class="title-group">
+            <div class="title">
+                <h1>{{ .Title }}</h1>
+            </div>
+						{{ if .Params.date }}
+            <div class="date">
+							<h5>{{ .Params.date.Format "Jan 2006" }}</h5></div>
+						{{ end }}
+        </div>
+				{{- if .Params.toc -}}
+					<div class="table-of-contents">
+						<h3>{{ i18n "whatsInThis" . }}</h3>
+						{{ .TableOfContents }}
+					</div>
+				{{- end -}}
+        <article class="content">
+            {{ .Content }}
+        </article>
+        {{ with .Params.tags }}
+            <div class="tags">
+                <span title="Tags">🏷</span>
+                <div class="horizontal-links links">
+                    {{ range . }}{{ with $.Site.GetPage (printf "/tags/%s" ( . | urlize)) }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </article>
+
+{{ end }}
