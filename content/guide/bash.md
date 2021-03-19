@@ -19,7 +19,7 @@ you'll encounter bash on a day to day basis. If you're a normal
 developer you come across bash as it's the default shell on pretty
 much anything with a terminal. Maybe you don't write bash programs,
 but you type things into a shell everyday. This is a single line
-program.  Installed some software from the internet these days? You've
+program. Installed some software from the internet these days? You've
 probably seen `curl` piped to `bash`. Bash is like the force. It is
 the power the surrounds us and binds our computers together, master it
 and you'll become more powerful than you'll ever imagine. It happened
@@ -108,8 +108,8 @@ argument and act accordingly.
 name="$1"
 
 if [[ -z "${name}" ]]; then
-	echo "USAGE: $0 NAME" 1>&2
-	exit 1
+  echo "USAGE: $0 NAME" 1>&2
+  exit 1
 fi
 
 echo "Hello ${name}"
@@ -117,8 +117,7 @@ echo "Hello ${name}"
 
 There are few things going on here. First, the `name` variable is
 assigned using `=`. Next we see the awkward looking bash `if` control
-structure. `if` evaluates to true if the given command exits 0. The `[[
-]]` is a built command for evaluating different conditions. In this case
+structure. `if` evaluates to true if the given command exits 0. The `[[ ]]` is a built command for evaluating different conditions. In this case
 the `-z ARG` tests the given value is zero length (blank). Bash requires
 `then` keyword followed by the code to execute. The `fi` ends the `if`
 control structure. Inside the if block the usage instructions are
@@ -151,27 +150,26 @@ I've found useful in practice.
 The unofficial strict mode is the most important of the whole list.
 Bash has many options. The most important, in my opinion, are off by
 default. These options are controlled by the `set` built in command.
-This line follows the shebang (`#!`) in every bash program: `set -euo
-pipefail`. This sets the following options.
+This line follows the shebang (`#!`) in every bash program: `set -euo pipefail`. This sets the following options.
 
 `set -e`
 : Exit if any command fails (exits non-zero). In
-	practice this means misspelled arguments, missing files, or anything
-	else that could go wrong is treated as an exit case instead of just
-	continuing on.
+practice this means misspelled arguments, missing files, or anything
+else that could go wrong is treated as an exit case instead of just
+continuing on.
 
 `set -u`
-:	Fail when an undefined variable is used. Bash treats
-	unassigned variables as blank strings by default. This is an annoying
-	behavior that makes programs hard to debug. A program should
-	never have undefined variables. This setting also requires the program
-	to handle cases where the value may be blank, which is good all around.
+: Fail when an undefined variable is used. Bash treats
+unassigned variables as blank strings by default. This is an annoying
+behavior that makes programs hard to debug. A program should
+never have undefined variables. This setting also requires the program
+to handle cases where the value may be blank, which is good all around.
 
 `set -o pipefail`
-:	Fail if any step in a pipeline fails. This is
-	another default annoyance. Assume the program calls `foo | bar | baz`.
-	Say bar fails. Out of the box, Bash will continue on as if this is OK.
-	This option tells the shell to exit if any part of the pipeline fails.
+: Fail if any step in a pipeline fails. This is
+another default annoyance. Assume the program calls `foo | bar | baz`.
+Say bar fails. Out of the box, Bash will continue on as if this is OK.
+This option tells the shell to exit if any part of the pipeline fails.
 
 These three options will make Bash programs feel like most programming
 languages: blowing up on stupid mistakes and failures. Now with that out
@@ -210,18 +208,18 @@ elements of structure and style.
 set -euo pipefail
 
 usage() {
-	echo "USAGE: ${0} NAME" 1>&2
+  echo "USAGE: ${0} NAME" 1>&2
 }
 
 main() {
-	local name="${1:-}"
+  local name="${1:-}"
 
-	if [[ -z "${name}" ]]; then
-		usage
-		return 1
-	fi
+  if [[ -z "${name}" ]]; then
+    usage
+    return 1
+  fi
 
-	echo "Hello ${name}"
+  echo "Hello ${name}"
 }
 
 main "$@"

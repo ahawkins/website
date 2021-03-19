@@ -44,17 +44,11 @@ paginate = 50
     url = "/theory/"
     weight = 1
   [[menu.main]]
-    identifier = "best-practice"
-    name = "Best Practices"
-    title = "Advice for workflows"
-    url = "/best-practice/"
+    identifier = "guide"
+    name = "Guides"
+    title = "References & recommendations"
+    url = "/guide/"
     weight = 2
-  [[menu.main]]
-    identifier = "handbook"
-    name = "Handbooks"
-    title = "Handbooks for specific tools and technologies"
-    url = "/handbook/"
-    weight = 3
   [[menu.main]]
     identifier = "book"
     name = "Books"

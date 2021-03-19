@@ -3,7 +3,7 @@ title: Watch Your Versions
 date: 2021-03-08T23:08:11-10:00
 ---
 
-Today I tried to add [Husy]({{< ref "handbook/husky" >}}) to this
+Today I tried to add [Husy]({{< ref "guide/husky" >}}) to this
 project. I went through my standard workflow of `yarn add -D husky`
 then declaring hooks in `package.json`. Then I tried to commit. Hook's
 didn't work.
