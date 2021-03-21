@@ -6,6 +6,18 @@ summary: |
 date: 2021-03-14T22:29:23-10:00
 ---
 
+Codefresh is a hosted and hybrid deployment pipeline solution. It may
+be used for testing and or deploying software. All steps in the
+pipeline run as Docker containers. Users can create reusable custom
+steps as well. Users can opt for the hosted version or host their
+runner on their own Kubernetes cluster.
+
+## Related Links
+
+- [Next Gen Deployments at Skillshare Webinar][skillshare webinar]: A
+  webinar I hosted for Codefresh sharing my experience building
+  deployment pipelines for Skillshare.
+
 ## Gotchas
 
 ### Hooks and Steps Do Not Share Env Vars
@@ -117,3 +129,4 @@ not set then the step will receive a literal `${{KUBE_CONTEXT}}` for
 [steps]: https://codefresh.io/docs/docs/codefresh-yaml/steps/
 [variables]: https://codefresh.io/docs/docs/codefresh-yaml/variables/
 [hooks]: https://codefresh.io/docs/docs/codefresh-yaml/hooks/
+[skillshare webinar]: https://codefresh.io/events/next-gen-deployments-skillshare/
