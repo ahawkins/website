@@ -81,6 +81,10 @@ paginate = 50
     url = "/series/12-factor-apps"
     weight = 2
   [[menu.recommended]]
+    name = "The High Velocity Edge"
+    url = "/series/the-high-velocity-edge"
+    weight = 3
+  [[menu.recommended]]
     name = "Preflight Checks"
     url = "/theory/preflight-checks"
     weight = 3

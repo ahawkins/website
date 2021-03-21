@@ -24,4 +24,7 @@ summary: |
 **Work in Progress**. _The High Velocity Edge_ will be discussed on
 [Small Batches][] along with an interview with Steven Spear.
 
+Refer to [The High Velocity Edge][series] for discussion.
+
 [small batches]: https://smallbatches.fm
+[series]: /series/the-high-velocity-edge

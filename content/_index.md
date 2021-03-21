@@ -6,7 +6,7 @@ description: Personal Wiki of Adam Hawkins
 # About
 
 This wiki began after I read [The High Velocity
-Edge]({{< ref "the-high-velocity-edge" >}}).
+Edge]({{< ref "book/the-high-velocity-edge" >}}).
 The author tells a story of him going to work at Toyota factory. He
 asks someone there how they do their particular job. I think it was
 something along the lines of how they did their part on the automotive
