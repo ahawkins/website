@@ -8,9 +8,19 @@ date: 2021-03-14T22:29:23-10:00
 
 ## Gotchas
 
+### Hooks and Steps Do Not Share Env Vars
+
+_Last encountered: Jan 2021_
+
+[Codefresh Hooks][hooks] appear to act like regular steps. You may
+consider using a hook and `cf_export` to set variables for all future
+steps in the pipeline. This **does not work**. Hooks and steps do not
+share the same context. In fact, they don't even have access to
+pipeline variables. Variables must be passed in directly to hooks.
+
 ### Custom Steps Use Prerelease Versions
 
-**Last encountered: March 2021**
+_Last encountered: March 2021_
 
 [Codefresh Steps][steps] use semantic versioning. If a pipeline step
 version is not declared then the "latest" version is used.
@@ -34,7 +44,7 @@ how they're presented in the UI.
 
 ### Conflicting Step & Pipeline Services
 
-**Last encountered: March 2021**
+_Last encountered: March 2021_
 
 [Codefresh Services][services] may be declared at the pipeline level
 (they run for all steps) or at the step level (run for a single step).
@@ -43,7 +53,7 @@ step services then _only_ the step services will run for that step.
 
 ### Undefined Variable Literals
 
-**Last encountered: March 2021**
+_Last encountered: March 2021_
 
 [Codefresh Variables][variables] may be referenced using `${{NAME}}`
 in the pipeline definition or as environment variables in commands
@@ -74,7 +84,7 @@ conditional steps though.
 
 ### Custom Step Environment Variables
 
-**Last encountered: March 2021**
+_Last encountered: March 2021_
 
 Pipeline variables outside the system provided variables **are not**
 automatically set on custom steps. I guess this is because of security
@@ -95,18 +105,15 @@ stepsTemplate: |-
     name: example
     image: example
     environment:
-      [[- if .Arugments.KUBE_CONTEXT ]]
-      - KUBE_CONTEXT=[[ .Arguments.KUBE_CONTEXT ]]
-      [[- else ]]
-      - KUBE_CONTEXT=${{KUBE_CONTEXT}}
-      [[- end ]]
+      - KUBE_CONTEXT=[[ default "${{KUBE_CONTEXT}}" .Arguments.KUBE_CONTEXT ]]
 ```
 
-This template takes the a `KUBE_CONTEXT` argument or uses the
+This template takes the `KUBE_CONTEXT` argument or uses the
 `KUBE_CONTEXT` variable from the pipeline. If the `KUBE_CONTEXT` is
-not set then the step will recieve a literal `${{KUBE_CONTEXT}}` for
+not set then the step will receive a literal `${{KUBE_CONTEXT}}` for
 `KUBE_CONTEXT`. Step authors are advised to always validate env vars.
 
 [services]: https://codefresh.io/docs/docs/codefresh-yaml/service-containers/
 [steps]: https://codefresh.io/docs/docs/codefresh-yaml/steps/
 [variables]: https://codefresh.io/docs/docs/codefresh-yaml/variables/
+[hooks]: https://codefresh.io/docs/docs/codefresh-yaml/hooks/
