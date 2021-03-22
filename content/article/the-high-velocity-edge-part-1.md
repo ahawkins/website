@@ -12,8 +12,8 @@ series:
 
 I'm taking Small Batches back to its roots for the next series of
 episodes. I've written coffee cup size servings of software delivery
-education based on Steven Spear's 2009 book ["The High Velocity
-Edge"][book].
+education based on Steven Spear's 2009 book [The High Velocity
+Edge][book].
 
 The High Velocity Edge offers a simple hypothesis: organization's with
 higher learning velocity beat the competition. Today's organizations
