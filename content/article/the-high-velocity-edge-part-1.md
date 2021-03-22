@@ -9,7 +9,7 @@ tags:
 series:
   - The High Velocity Edge
 summary: |
-  An introduction the four capabilities of high velocity
+  An introduction to the four capabilities of high velocity
   organizations.
 ---
 
