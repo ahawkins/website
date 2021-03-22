@@ -8,6 +8,9 @@ tags:
   - devops
 series:
   - The High Velocity Edge
+summary: |
+  An introduction the four capabilities of high velocity
+  organizations.
 ---
 
 I'm taking Small Batches back to its roots for the next series of
