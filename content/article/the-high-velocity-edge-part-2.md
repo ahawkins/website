@@ -73,7 +73,7 @@ opportunities for improvement. People immediately put countermeasures
 in place to prevent future occurrences. Eventually the organization
 built up a body of knowledge on how to design processes that made it
 easy to be safe and hard to get hurt. That knowledge spread around
-Alcoa. Eventually a core group of people understood this process, then
+Alcoa. Eventually a core cadre understood this process, then
 set about developing the same approach in others.
 
 When O’Neil joined, the risk of injury over a 25 year period was 40%.
