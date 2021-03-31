@@ -15,6 +15,7 @@ and you will move mountains.
 ## Command Guides
 
 - [xargs][]: The One Liner Chainsaw!
+- [curl][]: Make HTTP requests
 - [cut][]: Like `split` in many programming languages
 - [find][]: Search for files or directories
 - [comm][]: Set logic (and, or, intersect)
@@ -32,3 +33,4 @@ Output is nicely colored too.
 [cut]: {{< ref "guide/cut" >}}
 [find]: {{< ref "guide/find" >}}
 [comm]: {{< ref "guide/comm" >}}
+[curl]: {{< ref "guide/curl" >}}
