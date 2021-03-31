@@ -6,6 +6,8 @@ toc: true
 tags:
   - shell
   - bash
+summary: |
+  Guide with examples, recommendations, and gotchas
 ---
 
 > cut -- cut out selected portions of each line of a file

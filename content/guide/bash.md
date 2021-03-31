@@ -5,6 +5,8 @@ date: 2021-03-18T21:00:04-10:00
 tags:
   - shell
   - bash
+summary: |
+  Guide with examples, recommendations, and gotchas
 ---
 
 Bash is a powerful tool. It may glue systems together. It may glue

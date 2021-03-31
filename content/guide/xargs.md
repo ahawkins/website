@@ -6,6 +6,8 @@ toc: true
 tags:
   - shell
   - bash
+summary: |
+  Guide with examples, recommendations, and gotchas
 ---
 
 > xargs - build and execute command lines from standard input

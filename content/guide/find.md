@@ -2,6 +2,8 @@
 title: "find(1)"
 author: "Adam Hawkins"
 date: 2021-03-18T21:19:35-10:00
+summary: |
+  Guide with examples, recommendations, and gotchas
 ---
 
 `find` is a general purpose file/directory search tool. It combines
