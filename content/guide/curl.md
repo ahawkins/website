@@ -6,6 +6,8 @@ tags:
   - shell
   - bash
 toc: true
+summary: |
+  Effective curl usage with examples, recommendations, and gotchas
 ---
 
 > curl -- transfer a URL
