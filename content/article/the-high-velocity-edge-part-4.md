@@ -9,7 +9,7 @@ tags:
 series:
   - The High Velocity Edge
 summary: |
-  Introducing Taiichi Ohno and the philosophy for pull based work
+  Introducing Taiichi Ohno and the pull-based work philosophy
   known as "Kanban".
 ---
 
