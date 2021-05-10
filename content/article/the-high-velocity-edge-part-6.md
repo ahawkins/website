@@ -43,7 +43,7 @@ You'll see pathways for material, information, and services that
 convert the inputs to outputs. Ideally in a linear flow with minimal
 hand-offs, exchanges, and feedback loops.
 
-Imagine this like the different roles in the organization. There are
+Imagine this like the different roles in an organization. There are
 executives, managers, programmers, marketers, and customer support.
 Inputs will flow through each of these people before becoming an
 output.
