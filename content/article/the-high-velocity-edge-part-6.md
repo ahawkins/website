@@ -13,8 +13,6 @@ summary: |
   operation.
 ---
 
----
-
 Welcome to part six of a series on Steven Spear’s 2009 book [The High
 Velocity Edge][book]. Today, I’ll discuss how kanban applies to system design
 and jidoka applies to system operations. Together they create a
