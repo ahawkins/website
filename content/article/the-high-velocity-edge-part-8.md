@@ -82,6 +82,6 @@ others.
 
 Alright, there’s only one episode left in the series. 
 
-[kata]: {{< ref "/book/the-toyota-kata" >}}
-[book]: {{< ref "/book/the-high-velocity-edge" >}}
+[kata]: {{< ref "book/the-toyota-kata" >}}
+[book]: {{< ref "book/the-high-velocity-edge" >}}
 [jishuken]: https://leanfor6s.com/jishuken-the-toyota-way-to-continuous-improvement/

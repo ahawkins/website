@@ -12,7 +12,6 @@ tags:
   - management
   - leadership
   - toyota
-draft: true
 toc: true
 summary: |
   Toyota Kata gets to the essence of how Toyota manages continuous
