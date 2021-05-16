@@ -1,6 +1,6 @@
 ---
 title: "The High Velocity Edge: Part 7"
-author:  "Adam Hawkins"
+author: "Adam Hawkins"
 date: 2021-05-15T12:46:24-10:00
 tags:
   - continuous improvement
@@ -30,23 +30,23 @@ always be defects or unexpected scenarios. We don’t have perfect knowledge so
 failure is inevitable. Each failure is an opportunity to discover something new
 and move one step closer to the ideal.
 
-I’m just doing to quote Dr. Spear for this. This excerpt hit me square in the
+I’m just going to quote Dr. Spear for this. This excerpt hit me square in the
 face because it wonderfully lays out the ideal flow. It is:
 
-* Defect-free—never compromising customer satisfaction
-* On demand—only in response to real need.
-* One piece at a time—providing those who needed something exactly
+- Defect-free—never compromising customer satisfaction
+- On demand—only in response to real need.
+- One piece at a time—providing those who needed something exactly
   what they could put to use, not overburdening them with the
   obligation to hold things in anticipation of future need.
-* Immediate—providing those who needed something what they needed
+- Immediate—providing those who needed something what they needed
   without imposing any waiting time on them, but, if this was
   impossible, small batches of finished goods might be kept on hand to
-  provide the illusion of immediacy. 
-* Without waste—never spending time, effort, creativity, and other
+  provide the illusion of immediacy.
+- Without waste—never spending time, effort, creativity, and other
   efforts in ways that wouldn’t be valued by someone else.
-* safe—so one gets hurt physically or emotionally or is professional
+- safe—so one gets hurt physically or emotionally or is professional
   threatened.
-* secure—so that material, services, or information go only to those
+- secure—so that material, services, or information go only to those
   intended and not others.
 
 So, if the system falls short of the ideal, then that’s a problem. High
@@ -56,7 +56,7 @@ something like this.
 Step one: describe the process and why you’re concerned about it.
 
 Step two: describe the current condition. This is how the work is being done
-and problems are occurring. 
+and problems are occurring.
 
 Step three: conduct root cause analysis. What did you learn when investigating
 the problem?
@@ -76,13 +76,13 @@ This is basically the scientific method, but just saying that doesn’t make it
 easier to start doing. That requires discipline and focus. That’s the hard
 part.
 
-Concepts like the [Plan-do-check-at (PDCA) loop][PDCA] or
-[Observe-Orient-Decide-Act (OODA) loop][OODA] encapsulate the same the
+Concepts like the [Plan-do-check-at (PDCA) loop][pdca] or
+[Observe-Orient-Decide-Act (OODA) loop][ooda] encapsulate the same the
 process.
 
 The important part is that these are _loops_. They are not one-off processes.
 Organizations continually apply these processes in a disciplined way to
-continuously improve their work. 
+continuously improve their work.
 
 Combine the disciplined problem solving approach with fast flow then you have
 seeds of high speed continuous improvement, or _kaizen_.
