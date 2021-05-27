@@ -117,9 +117,14 @@ experiment taught me that it is a useful tool and definitely deserves
 a spot in my workflow. I can't wait to add this to my precommit
 `lint-staged` hook.
 
-The second learning is that Semgrep has an `--autofix` option. **Do
-not use this**. It's not reliable enough yet. Consider this alpha
-level.
+The second learning is that Semgrep has an `--autofix` option.
+Consider this feature **alpha**. In some cases it rewrote code
+completely unexpectedly and in the worst case resulted in syntax
+errors. This is not reliable enough yet to use on an entire codebase
+or along side tools like mature tools such as `eslint`. Try it on
+single files before trying across the entire code base. All that being
+said, I did write `fix` and `fix-regex` rules for all rules just to
+test it out. Hopefully the `--autofix` option matures over time.
 
 Lastly, it could be faster. It could be too slow to run on entire
 codebases during precommit. Luckily it can be limited to specific
