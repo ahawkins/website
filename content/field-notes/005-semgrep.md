@@ -3,6 +3,7 @@ title: "Semgrep"
 slug: 5
 author: "Adam Hawkins"
 date: 2021-05-26T22:07:56-10:00
+summary: Semgrep is great. Try it!
 ---
 
 I started using [semgrep][] on a work project. I initially learned
