@@ -3,7 +3,6 @@ title: "Semgrep"
 slug: 5
 author: "Adam Hawkins"
 date: 2021-05-26T22:07:56-10:00
-draft: true
 ---
 
 I started using [semgrep][] on a work project. I initially learned
