@@ -60,7 +60,7 @@ Now the test suite can add more checks to `toBeSection()` and now more
 repeated code. All that's left is to identify all the call sites.
 `semgrep` is great for this.
 
-I initially wrote a rule to find all `toHaveProperty("type", "section")` calls. Then I realized I could generalize to find common
+I initially wrote a rule to find all `toHaveProperty("type", "section")` calls. Then I learned I could generalize it to find common
 _sequences_ of code. Check this out.
 
 ```yaml
