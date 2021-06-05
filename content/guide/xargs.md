@@ -6,7 +6,7 @@ toc: true
 tags:
   - shell
   - bash
-summary: |
+description: |
   Guide with examples, recommendations, and gotchas
 ---
 

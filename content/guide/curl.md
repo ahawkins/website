@@ -6,7 +6,7 @@ tags:
   - shell
   - bash
 toc: true
-summary: |
+description: |
   Effective curl usage with examples, recommendations, and gotchas
 ---
 

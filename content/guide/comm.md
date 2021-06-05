@@ -5,6 +5,8 @@ date: 2021-03-18T21:27:24-10:00
 tags:
   - shell
   - bash
+description: |
+  comm(1) -- select or reject lines common to two files
 ---
 
 > comm -- select or reject lines common to two files

@@ -5,7 +5,7 @@ date: 2021-06-04T22:39:56-10:00
 tags:
   - shell
   - bash
-summary: |
+description: |
   The unofficial Bash strict mode and recommend program structure
 ---
 

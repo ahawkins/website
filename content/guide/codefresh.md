@@ -1,6 +1,6 @@
 ---
 title: "Codefresh"
-summary: |
+description: |
   Codefresh is a hosted or hybird deployment pipeline tool. Best
   practices and gotchas for writing pipelines.
 date: 2021-03-14T22:29:23-10:00
