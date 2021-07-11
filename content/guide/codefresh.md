@@ -125,6 +125,43 @@ This template takes the `KUBE_CONTEXT` argument or uses the
 not set then the step will receive a literal `${{KUBE_CONTEXT}}` for
 `KUBE_CONTEXT`. Step authors are advised to always validate env vars.
 
+### Exporting Environment Variables in Steps
+
+_Last encountered: April 2021_
+
+Exporting environment variables in your own steps and custom steps is
+different. The docs refer to `cf_export`. This is for your exporting
+env vars in your own steps. Do not use this when writing custom steps.
+Custom steps should echo `export FOO=bar >> /meta/env`. Apparently the
+`/meta/env` is a special file that Codefresh reads when authoring
+custom steps.
+
+### Pipeline Template Variable Limitations
+
+_Last encountered: March 2021_
+
+You may assume that you can reference variable using the `${{var}}`
+syntax anywhere in the pipeline YAML file. This is **not** the case.
+These "pipeline" variables (or whatever they're called) do not work
+everywhere. They work _most_ places.
+
+Here's an example.
+
+```yaml
+steps:
+  build:
+    type: build
+    # ....
+
+  run:
+    image: foo
+    commands:
+      - echo ${{build}}
+```
+
+This does not work. The `${{build}}` step variable may only be used in
+certain places in the YAML file.
+
 [services]: https://codefresh.io/docs/docs/codefresh-yaml/service-containers/
 [steps]: https://codefresh.io/docs/docs/codefresh-yaml/steps/
 [variables]: https://codefresh.io/docs/docs/codefresh-yaml/variables/
