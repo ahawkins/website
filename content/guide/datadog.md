@@ -31,6 +31,14 @@ chart to setup:
 2. Nginx status check (for uptime monitoring)
 3. Log parsing (so logs make sense out of the box)
 4. Overall http check (for uptime monitoring)
+5. OpenTracing with Datadog[^1]
+
+[^1]:
+    This setup assumes DD is running on the cluster deployed as a
+    `DaemonSet`. The agent is accessible on the host IP. This seems like
+    the current best practice. The `config` values support env var
+    values here, so export `DD_TRACE_AGENT_HOSTNAME` on the pods via
+    `extraEnvs`.
 
 These values are tested against Helm chart `3.34.0` release in July 2021.
 
@@ -38,7 +46,7 @@ These values are tested against Helm chart `3.34.0` release in July 2021.
 controller:
   podLabels:
     tags.datadoghq.com/env: prod
-    tags.datadoghq.com/service: my-ingress
+    tags.datadoghq.com/service: ingress-tools-v2
   podAnnotations:
     ad.datadoghq.com/controller.check_names: |
       [ "nginx", "nginx_ingress_controller" ]
@@ -57,7 +65,7 @@ controller:
   service:
     labels:
       tags.datadoghq.com/env: prod
-      tags.datadoghq.com/service: my-ingress
+      tags.datadoghq.com/service: ingress-tools-v2
     annotations:
       ad.datadoghq.com/service.check_names: |
         [ "http_check" ]
@@ -70,7 +78,15 @@ controller:
         }]
   metrics:
     enabled: true
+  extraEnvs:
+    - name: DD_TRACE_AGENT_HOSTNAME
+      valueFrom:
+        fieldRef:
+          fieldPath: status.hostIP
   config:
+    enable-opentracing: true
+    datadog-collector-host: "$DD_TRACE_AGENT_HOSTNAME"
+    datadog-service-name: ingress-tools-v2
     http-snippet: |
       server {
         listen 18080;
