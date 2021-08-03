@@ -91,6 +91,12 @@ controller:
       server {
         listen 18080;
 
+        set $proxy_upstream_name "internal";
+
+        access_log off;
+
+        opentracing off;
+
         location /nginx_status {
           allow all;
           stub_status on;
