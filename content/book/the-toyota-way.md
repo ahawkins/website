@@ -8,7 +8,6 @@ date: 2020-11-10
 publishDate: 2021-08-04T22:24:40-10:00
 author:
   - Jeffery Liker
-draft: true
 toc: true
 tags: [toyota]
 summary: |
