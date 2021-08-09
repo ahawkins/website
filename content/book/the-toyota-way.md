@@ -93,13 +93,13 @@ just-in-time begins to take on meaning.
 
 **Principle five: standardize work as the foundation for
 continuous improvement**. Continuous improvement, or _kaizen_, only
-works if there is a base line. Standardizing work means codifying the
+works if there is a baseline. Standardizing work means codifying the
 best way to do something as it's currently understood. "Currently" is
 the operative word in that sentence.
 
 **Principle six: stop and fix problems when they occur**.
 This is follow up to principle two. Stop and fix problem as early as
-possible in the process. Toyota's [Andon coord][] is an example. [^4]
+possible in the process. Toyota's [Andon cord][] is an example. [^4]
 
 [^4]:
     See "Capability Two: Problem Solving" from [The High Velocity
@@ -177,7 +177,7 @@ to iterate in small batches over years.
     stay small, and keep iterating.
 
 These principles underpin two other Toyota-isms: [The Toyota Production
-System][] and the Toyota Business practices.
+System][TPS] and the Toyota Business practices.
 
 ## Toyota Production System & Toyota Business Practices
 
@@ -319,7 +319,7 @@ problems.
 
 I think there's hesistancy in adopting "standard work" in
 knowledge work (like IT). Detractors see it as means of stifling
-peoples creative abilities. I don't think that's the case. I consider
+people's creative abilities. I don't think that's the case. I consider
 the standard guardrails. They are proven formulas. Human creativity is
 not needed to complete a standard procedure. Human creativity is
 needed to _improve_ the standard. There is a time and place for
@@ -457,7 +457,7 @@ Alright, here's the last one.
 This quote resonated with me because it reveals that leadership is a
 real issue. How many times has the responsibility incorrectly fallen
 on frontline people when management assumes a new way of working is a
-magic bullet that solves all the problems.
+magic bullet that solves all of the problems.
 
 [THVE]: {{< ref "book/the-high-velocity-edge.md" >}}
 [The Toyota Kata]: {{< ref "book/the-toyota-kata.md" >}}
@@ -466,5 +466,6 @@ magic bullet that solves all the problems.
 [preflight checks]: {{< ref "theory/preflight-checks" >}}
 [variation]: {{< ref "theory/variation" >}}
 [small batches]: https://smallbatches.fm
-[andon coord]: https://itrevolution.com/kata/
-[toyota production system]: https://en.wikipedia.org/wiki/Toyota_Production_System
+[andon cord]: https://itrevolution.com/kata/
+[TPS]: https://en.wikipedia.org/wiki/Toyota_Production_System
+[PDCA]: https://deming.org/explore/pdsa/
