@@ -3,7 +3,7 @@ title: "Software Development in 3 Principles and 4 Metrics"
 date: 2020-03-09T23:59:08Z
 series:
   - "The Three Ways of Devops"
-draft: true
+draft: false
 ---
 
 My career began as a web application developer. I assumed success
@@ -202,7 +202,8 @@ irrelevant in this scenario. The relevant question is why did it
 happen and what can be done in the future to prevent it? This
 philosophy keeps businesses ahead. Or as Peter Senge puts it:
 
-> The only sustainable competitive advantage is an organization’s ability to learn faster than the competition.
+> The only sustainable competitive advantage is an organization’s
+> ability to learn faster than the competition.
 
 ## Conclusion
 
