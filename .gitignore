@@ -2,3 +2,4 @@ scratch/
 ghost2hugo
 resources
 public/
+.hugo_build.lock
