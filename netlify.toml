@@ -8,7 +8,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
-  from = "/the-toyota-kata/"
+  from = "/the-toyota-way/"
   to = "https://softwarekaizen.substack.com/p/the-toyota-way-14-principles-from"
   status = 301
   force = true
